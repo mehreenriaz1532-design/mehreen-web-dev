@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechGuide IT Services</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+/* Hero Section Styling */
+.hero-section {
+  background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+  color: white;
+  padding: 100px 0;
+}
+
+/* Get Started Button Customization */
+.btn-get-started {
+  background-color: #ffc107;
+  border: none;
+  color: #000;
+  padding: 12px 35px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
+}
+
+.btn-get-started:hover {
+  background-color: #ffca2c;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 193, 7, 0.6);
+  color: #000;
+}
+:root {
+  --bg-color: #ffffff;
+  --text-color: #212529;
+  --card-bg: #f8f9fa;
+  --navbar-bg: #0d6efd;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --card-bg: #1e1e1e;
+  --navbar-bg: #000000;
+}
+
+body {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  transition: all 0.3s ease;
+}
+
+.card, .bg-light {
+  background-color: var(--card-bg) !important;
+  color: var(--text-color) !important;
+}
+
+.navbar {
+  background-color: var(--navbar-bg) !important;
+}
+
+.theme-toggle {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+     <a class="navbar-brand" href="#">Mehreen Riaz</a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+           <li class="nav-item"><a class="nav-link" href="#process">Process</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+           <li class="nav-item"><a class="nav-link" href="#Testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+         </ul>
+         <!-- THEME TOGGLE BUTTON START -->
+<div class="theme-toggle ms-3" onclick="toggleTheme()" title="Toggle Theme">
+  <i class="bi bi-moon-stars-fill" id="theme-icon"></i>
+</div>
+<!-- THEME TOGGLE BUTTON END -->
+      </div>
+   </div>
+ </nav>
+        
+
+  
+  <!-- Hero Section -->
+  <section id="home" class="hero-section py-5 d-flex align-items-center" style="min-height: 90vh;">
+  <div class="container text-center">
+    <h1 class="display-4 fw-bold mb-3">Professional IT services for your business growth</h1>
+    <p class="lead mb-4">We provide cutting-edge solutions for your business growth</p>
+    <a href="#contact" class="btn btn-get-started">Get Started</a>
+  </div>
+</section>
+
+  <!-- Services Section -->
+<section id="services" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-2 fw-bold">Our Services</h2>
+    <p class="text-center text-muted mb-5">We provide cutting-edge solutions for your business growth</p>
+    
+    <div class="row g-4">
+      
+      <!-- Service 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow text-center p-4 service-card">
+          <div class="card-body">
+            <div class="icon-circle bg-primary bg-gradient text-white mb-3 mx-auto">
+              <i class="bi bi-laptop fs-2"></i>
+            </div>
+            <h5 class="card-title fw-bold">Website Development</h5>
+            <p class="card-text text-muted">Modern, responsive websites using latest technologies like React, Bootstrap, and Node.js.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow text-center p-4 service-card">
+          <div class="card-body">
+            <div class="icon-circle bg-success bg-gradient text-white mb-3 mx-auto">
+              <i class="bi bi-cart fs-2"></i>
+            </div>
+            <h5 class="card-title fw-bold">Ecommerce Solutions</h5>
+            <p class="card-text text-muted">Complete online stores with payment gateway, inventory management, and admin panel.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow text-center p-4 service-card">
+          <div class="card-body">
+            <div class="icon-circle bg-danger bg-gradient text-white mb-3 mx-auto">
+              <i class="bi bi-phone fs-2"></i>
+            </div>
+            <h5 class="card-title fw-bold">Mobile Apps</h5>
+            <p class="card-text text-muted">Android & iOS apps with React Native and Flutter for seamless user experience.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow text-center p-4 service-card">
+          <div class="card-body">
+            <div class="icon-circle bg-warning bg-gradient text-white mb-3 mx-auto">
+              <i class="bi bi-diagram-3 fs-2"></i>
+            </div>
+            <h5 class="card-title fw-bold">ERP Systems</h5>
+            <p class="card-text text-muted">Custom ERP solutions to streamline your business operations and increase efficiency.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow text-center p-4 service-card">
+          <div class="card-body">
+            <div class="icon-circle bg-info bg-gradient text-white mb-3 mx-auto">
+              <i class="bi bi-megaphone fs-2"></i>
+            </div>
+            <h5 class="card-title fw-bold">Digital Marketing</h5>
+            <p class="card-text text-muted">SEO, Social Media Marketing, and PPC campaigns to grow your online presence.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 6 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow text-center p-4 service-card">
+          <div class="card-body">
+            <div class="icon-circle bg-secondary bg-gradient text-white mb-3 mx-auto">
+              <i class="bi bi-headset fs-2"></i>
+            </div>
+            <h5 class="card-title fw-bold">IT Support</h5>
+            <p class="card-text text-muted">24/7 technical support and maintenance for all your IT infrastructure needs.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service-card {
+  transition: transform 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-10px);
+}
+</style>
+<!-- Process Section -->
+<section id="process" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-2 fw-bold">Our Process</h2>
+    <p class="text-center text-muted mb-5">How we turn your ideas into reality in 4 simple steps</p>
+    
+    <div class="row g-4">
+      
+      <!-- Step 1 -->
+      <div class="col-md-3">
+        <div class="text-center">
+          <div class="position-relative mb-4">
+            <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+              <span class="fs-2 fw-bold">1</span>
+            </div>
+          </div>
+          <h5 class="fw-bold">Requirement Analysis</h5>
+          <p class="text-muted">We understand your business needs and gather all requirements in detail.</p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="col-md-3">
+        <div class="text-center">
+          <div class="position-relative mb-4">
+            <div class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+              <span class="fs-2 fw-bold">2</span>
+            </div>
+          </div>
+          <h5 class="fw-bold">Design & Development</h5>
+          <p class="text-muted">Our team designs and develops your solution using latest technologies.</p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="col-md-3">
+        <div class="text-center">
+          <div class="position-relative mb-4">
+            <div class="bg-warning text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+              <span class="fs-2 fw-bold">3</span>
+            </div>
+          </div>
+          <h5 class="fw-bold">Testing & QA</h5>
+          <p class="text-muted">Rigorous testing ensures bug-free and high-quality product delivery.</p>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="col-md-3">
+        <div class="text-center">
+          <div class="position-relative mb-4">
+            <div class="bg-danger text-white rounded-circle d-inline-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+              <span class="fs-2 fw-bold">4</span>
+            </div>
+          </div>
+          <h5 class="fw-bold">Deployment & Support</h5>
+          <p class="text-muted">We launch your project and provide 24/7 ongoing support.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-2 fw-bold">Our Portfolio</h2>
+    <p class="text-center text-muted mb-5">Check out some of our recent projects</p>
+    
+    <div class="row g-4">
+      
+      <!-- Project 1 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow portfolio-card">
+          <img src="https://via.placeholder.com/400x250/0d6efd/ffffff?text=E-Commerce+Store" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">E-Commerce Store</h5>
+            <p class="card-text text-muted">Complete online shopping website with payment gateway.</p>
+            <span class="badge bg-primary">React</span>
+            <span class="badge bg-secondary">Node.js</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow portfolio-card">
+          <img src="https://via.placeholder.com/400x250/198754/ffffff?text=School+ERP" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">School ERP System</h5>
+            <p class="card-text text-muted">Complete management system for schools and colleges.</p>
+            <span class="badge bg-success">Laravel</span>
+            <span class="badge bg-info">MySQL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow portfolio-card">
+          <img src="https://via.placeholder.com/400x250/dc3545/ffffff?text=Mobile+App" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Food Delivery App</h5>
+            <p class="card-text text-muted">Android & iOS app for food ordering and delivery.</p>
+            <span class="badge bg-danger">Flutter</span>
+            <span class="badge bg-warning">Firebase</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow portfolio-card">
+          <img src="https://via.placeholder.com/400x250/ffc107/000000?text=Hospital+System" class="card-img-top" alt="Project 4">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Hospital Management</h5>
+            <p class="card-text text-muted">Complete ERP for hospitals with patient records.</p>
+            <span class="badge bg-warning">Django</span>
+            <span class="badge bg-dark">PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow portfolio-card">
+          <img src="https://via.placeholder.com/400x250/0dcaf0/000000?text=Real+Estate" class="card-img-top" alt="Project 5">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Real Estate Portal</h5>
+            <p class="card-text text-muted">Property listing website with advanced search filters.</p>
+            <span class="badge bg-info">Next.js</span>
+            <span class="badge bg-primary">MongoDB</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="col-md-4">
+        <div class="card border-0 shadow portfolio-card">
+          <img src="https://via.placeholder.com/400x250/6c757d/ffffff?text=CRM+Software" class="card-img-top" alt="Project 6">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">CRM Software</h5>
+            <p class="card-text text-muted">Customer relationship management tool for businesses.</p>
+            <span class="badge bg-secondary">Vue.js</span>
+            <span class="badge bg-success">Express</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+.portfolio-card {
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+.portfolio-card:hover {
+  transform: translateY(-10px);
+}
+.portfolio-card img {
+  transition: transform 0.3s ease;
+}
+.portfolio-card:hover img {
+  transform: scale(1.1);
+}
+</style>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-2 fw-bold">What Our Clients Say</h2>
+    <p class="text-center text-muted mb-5">Don't just take our word for it</p>
+    
+    <div class="row g-4">
+      
+      <!-- Review 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm p-4">
+          <div class="card-body text-center">
+            <div class="mb-3">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+            </div>
+            <p class="card-text fst-italic">"Amazing work! They delivered our e-commerce website on time. Sales increased by 200% after launch."</p>
+            <div class="d-flex align-items-center justify-content-center mt-4">
+              <img src="https://i.pravatar.cc/60?img=1" class="rounded-circle me-3" width="60" height="60" alt="Client">
+              <div class="text-start">
+                <h6 class="mb-0 fw-bold">Ahmed Khan</h6>
+                <small class="text-muted">CEO, TechMart</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm p-4">
+          <div class="card-body text-center">
+            <div class="mb-3">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+            </div>
+            <p class="card-text fst-italic">"Professional team with excellent support. Our school ERP is running smoothly since 2 years."</p>
+            <div class="d-flex align-items-center justify-content-center mt-4">
+              <img src="https://i.pravatar.cc/60?img=5" class="rounded-circle me-3" width="60" height="60" alt="Client">
+              <div class="text-start">
+                <h6 class="mb-0 fw-bold">Fatima Ali</h6>
+                <small class="text-muted">Principal, City School</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow-sm p-4">
+          <div class="card-body text-center">
+            <div class="mb-3">
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+              <i class="bi bi-star-fill text-warning"></i>
+            </div>
+            <p class="card-text fst-italic">"Best IT company in town! They built our mobile app exactly as we wanted. Highly recommended."</p>
+            <div class="d-flex align-items-center justify-content-center mt-4">
+              <img src="https://i.pravatar.cc/60?img=8" class="rounded-circle me-3" width="60" height="60" alt="Client">
+              <div class="text-start">
+                <h6 class="mb-0 fw-bold">Usman Tariq</h6>
+                <small class="text-muted">Founder, FoodieHub</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <!-- Team Section -->
+  <section id="team" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Team</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4 col-lg-3">
+            <div class="card text-center h-100">
+   <img src="https://i.pravatar.cc/300?img=5" class="card-img-top" alt="Team Member">
+   <div class="card-body">
+    <h5 class="card-title">Mehreen Riaz</h5>
+    <p class="card-text">Web Developer</p>
+   </div>
+  </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <div class="card text-center h-100">
+<img src="https://i.pravatar.cc/300?img=12" class="card-img-top" alt="Hussain Ali">
+            <div class="card-body">
+              <h5 class="card-title">Hussain Ali</h5>
+              <p class="card-text text-muted">Technology Guide</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Contact Us</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  
+
+
+<footer class="bg-dark text-white text-center py-3">  
+    <p class="mb-0">© 2026 Technology Guide IT Services. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS for Session 4 -->
+<script>
+  function showAlert() {
+    alert('JavaScript chal raha hai! Session 4 Complete ✅');
+  }
+
+  function changeText() {
+    let inputValue = document.getElementById('userInput').value;
+    if(inputValue === '') {
+      alert('Pehle kuch likho!');
+    } else {
+      document.getElementById('demo-text').innerText = inputValue;
+      document.getElementById('userInput').value = '';
+    }
+  }
+</script>
+<!-- Footer -->
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row g-4">
+      
+      <!-- Column 1: About -->
+      <div class="col-md-4">
+        <h5 class="fw-bold mb-3">Mehreen Riaz</h5>
+        <p class="text-white-50">We provide innovative IT solutions to help businesses grow and succeed in the digital world.</p>
+        <div class="d-flex gap-3 mt-3">
+          <a href="#" class="text-white fs-4"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white fs-4"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-white fs-4"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-white fs-4"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="col-md-2">
+        <h5 class="fw-bold mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#home" class="text-white-50 text-decoration-none">Home</a></li>
+          <li class="mb-2"><a href="#services" class="text-white-50 text-decoration-none">Services</a></li>
+          <li class="mb-2"><a href="#portfolio" class="text-white-50 text-decoration-none">Portfolio</a></li>
+          <li class="mb-2"><a href="#team" class="text-white-50 text-decoration-none">Team</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Services -->
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3">Services</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a href="#services" class="text-white-50 text-decoration-none">Web Development</a></li>
+          <li class="mb-2"><a href="#services" class="text-white-50 text-decoration-none">Mobile Apps</a></li>
+          <li class="mb-2"><a href="#services" class="text-white-50 text-decoration-none">ERP Systems</a></li>
+          <li class="mb-2"><a href="#services" class="text-white-50 text-decoration-none">Digital Marketing</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Contact -->
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3">Contact Us</h5>
+        <ul class="list-unstyled text-white-50">
+          <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> Karachi, Pakistan</li>
+          <li class="mb-2"><i class="bi bi-envelope me-2"></i> info@mehreenriaz.com</li>
+          <li class="mb-2"><i class="bi bi-phone me-2"></i> +92 300 1234567</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <hr class="my-4 bg-secondary">
+
+    <!-- Copyright -->
+    <div class="text-center text-white-50">
+      <p class="mb-0">© 2026 Mehreen Riaz. All Rights Reserved.</p>
+    </div>
+
+  </div>
+</footer>
+<!-- DARK MODE JS START -->
+<script>
+function toggleTheme() {
+  const currentTheme = document.documentElement.getAttribute("data-theme");
+  const newTheme = currentTheme === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", newTheme);
+  
+  // Icon change karo
+  const icon = document.getElementById("theme-icon");
+  if(icon) {
+    icon.className = newTheme === "dark" ? "bi bi-sun-fill" : "bi bi-moon-stars-fill";
+  }
+  
+  // User ki choice save karo
+  localStorage.setItem("theme", newTheme);
+}
+
+// Page load pe saved theme apply karo
+document.addEventListener('DOMContentLoaded', function() {
+  const savedTheme = localStorage.getItem("theme") || "light";
+  document.documentElement.setAttribute("data-theme", savedTheme);
+  
+  const icon = document.getElementById("theme-icon");
+  if(icon) {
+    icon.className = savedTheme === "dark" ? "bi bi-sun-fill" : "bi bi-moon-stars-fill";
+  }
+});
+</script>
+<!-- DARK MODE JS END -->
+</body>
+</html>
